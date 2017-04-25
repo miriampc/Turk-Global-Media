@@ -15,86 +15,102 @@ font-family: 'Fauna One', serif;*/
 }
 header{
   width: 100%;
-  height: 90px;
-  /*background: #;*/
+  height: 80px;
+  background: rgba(235, 245, 245, 0.86);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 aside{
   margin: 5% 25%;
 }
 
+.contenedor{
+  width: 100%;
+  height: auto;
+}
+
 .menu{
-  position: relative;
   height: 80px;
+  margin: 0 7%;
+  position: relative;
 }
 
 .logo{
-  display: inline-block;
+  position: absolute;
+  left: 45%;
   width: 300px;
   height: 70px;
-  position: absolute;
-  top:10px;
-  left:40%;
 }
-.img-logo{
-  position: absolute;
-  left: 0;
-  top: 10px;
+
+.img-logo img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 5px;
 }
 .name-logo{
   height: 70px;
   width: 170px;
-  position: absolute;
-  left: 60px;
-  top: 0;
 }
 .turk{
   font-size: 3.8em;
-  top: 5px;
   font-family: "Acme";
+  color: #40cbe9;
+  position: absolute;
+  top: 5px;
+  left: 80px;
 }
 .tv{
   font-size: 3em;
   position: absolute;
-  left: 125px;
+  left: 200px;
   top: 10px;
   font-family: "Acme";
-}
-
-.logo img{
-  width: 50px;
-  height: 50px
+  color: #1d2a46;
 }
 
 .menu ul{
   position: absolute;
-  left: 5%;
-  top: 15px;
+  top: 14px;
 }
 
 .menu ul li{
   list-style: none;
   display: inline-block;
   margin: 10px;
-  top: 20px;
 }
 .menu ul li a{
   text-decoration: none;
-  color:#3E517A;
+  color: #3E517A;;
   font-weight: bold;
   font-size: 21px;
 }
-.contenedor{
-  width: 100%;
-  height: auto;
+.menu ul li a:hover{
+  padding: 10px;
+  border-bottom: 2px solid #d1f4f6;
+  transform: scale(1.1);
 }
 
-.form{
+.menu-right input{
+  border: 1px solid #1d2a46;
+  padding: 7px;
+  background: none;
+  /*color:  #1d2a46;*/
+  width: 100px;
+}
+/*.form input:hover{
+  width: 200px;
+}*/
+
+.menu-right{
   position: absolute;
   right:5%;
   top: 20px;
 }
-.form a{
+.menu-right a{
   text-decoration: none;
 }
 /*social media fixed*/
@@ -119,7 +135,7 @@ aside{
 
 .reproductor{
   display: none;
-  z-index: 3;
+  /*z-index: 3;*/
   width: 100%;
   height: 100%;
   background-color: rgba(0, 240, 181,0.6);
@@ -161,6 +177,7 @@ aside{
 
 /*slides*/
 .slide{
+  margin-top: 80px;
   position: relative;
   text-align: center;
   background:#d8e9eb;
@@ -168,7 +185,8 @@ aside{
 
 .figure-slide img{
   width: 900px;
-  height: 500px;
+  height: 450px;
+  margin: 30px 0;
 }
 
 .figure-slide span{
