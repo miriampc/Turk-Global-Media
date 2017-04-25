@@ -1,3 +1,4 @@
+@import url('../icomoon/style.css');
 *{
   padding: 0;
   margin: 0;
@@ -12,15 +13,19 @@ header{
 }
 .menu{
   position: relative;
-
 }
+
 .menu .logo{
   width: 120px;
   height: 50px;
   position: absolute;
   top:10px;
   left:5%;
-  border: 1px solid #000;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
 }
 .menu ul{
   position: absolute;
@@ -42,8 +47,31 @@ header{
   border: 1px solid #000;
 }
 
+/*social media fixed*/
+.social-media{
+  width: 80px;
+  height: auto;
+  position: fixed;
+  left: 5px;
+  top:35%;
+}
+
+.social-media a{
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.social-media a:hover{
+  transform: scale(1.1);
+}
+
 .principal{
   height: 70px;
+}
+
+.image-novel{
+  margin: 10px;
+  display: inline-block;
 }
 footer{
   width: 100%;
