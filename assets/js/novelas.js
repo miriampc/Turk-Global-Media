@@ -9,6 +9,9 @@ var allNovels=[{src:directory, alt:"Sila",sinoptic:""},
                {src:directory, alt:"Tormenta de Pasiones",sinoptic:""}];
 
 
+var slideImg=[{src:directory, alt:"feriha",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"fatmagul",sinoptic:"",file:".png"},
+              {src:directory, alt:"milyunanoche",sinoptic:"",file:".jpg"}];
 
 function GridSection(figure){
    this.allNovels=figure;
@@ -20,4 +23,18 @@ function GridSection(figure){
      })
    };
 }
+
+function SlideSection(figure){
+   this.slideImg=figure;
+   this.addImages=function(){
+     this.figures.push({
+       directory:directory,
+       alt:alt,
+       sinoptic:sinoptic,
+       file:file
+     })
+   };
+}
+
 var figures=new GridSection(allNovels);
+var slides=new SlideSection(slideImg);

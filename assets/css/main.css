@@ -5,7 +5,12 @@
   box-sizing: border-box;
   font-family: cursive;
 }
-
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 header{
   width: 100%;
   height: 70px;
@@ -49,7 +54,7 @@ header{
 
 /*social media fixed*/
 .social-media{
-  width: 80px;
+  width: 50px;
   height: auto;
   position: fixed;
   left: 5px;
@@ -73,6 +78,16 @@ header{
   margin: 10px;
   display: inline-block;
 }
+
+/*slides*/
+.slide{
+  position: relative;
+}
+.figure-slide img{
+  width: 900px;
+  height: 500px;
+}
+
 footer{
   width: 100%;
   height: 100px;
