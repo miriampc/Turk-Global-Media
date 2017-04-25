@@ -10,9 +10,14 @@ var allNovels=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
                {src:directory, alt:"Tormenta de Pasiones",sinoptic:"",video:videoDirectory}];
 
 
-var slideImg=[{src:directory, alt:"feriha",sinoptic:"",file:".jpg"},
-              {src:directory, alt:"fatmagul",sinoptic:"",file:".png"},
-              {src:directory, alt:"milyunanoche",sinoptic:"",file:".jpg"}];
+var slideImg=[{src:directory, alt:"Feriha",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Fatmagul",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Milyunanoche",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Amorprohibido",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Sila",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Anne",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Medcezir",sinoptic:"",file:".jpg"},
+              {src:directory, alt:"Kosem",sinoptic:"",file:".png"}];
 
 function GridSection(figure){
    this.allNovels=figure;

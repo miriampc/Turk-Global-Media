@@ -16,7 +16,7 @@ font-family: 'Fauna One', serif;*/
 header{
   width: 100%;
   height: 70px;
-  background: #73f587;
+  background: #A8D0D9;
 }
 
 aside{
@@ -33,6 +33,12 @@ aside{
   position: absolute;
   top:10px;
   left:5%;
+}
+.menu div{
+  display: inline-block;
+}
+.turk{
+  font-size: 3em;
 }
 
 .logo img{
