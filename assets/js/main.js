@@ -21,12 +21,15 @@ window.addEventListener('load',function(){
     grid.appendChild(docFragment);
 
     figure.onclick=function(event){
+      createReproductor(id);
       event.preventDefault();
       console.log(e.video+id+".mp4");
       document.getElementsByClassName('reproductor')[0].classList.add("show");
-      document.getElementById('video').setAttribute("src","assets/media/video"+id+".mp4");
+      document.getElementById('srcvideo').setAttribute("src",e.video+id+".mp4");
       document.getElementById('close-reproductor').addEventListener("click",function(){
         document.getElementsByClassName('reproductor')[0].classList.remove("show");
+        console.log(document.getElementById('video'+id));
+        document.getElementById('reproductor').removeChild(document.getElementById('video'+id));
       });
     }
 
@@ -61,7 +64,7 @@ function createSlide(e,id){
   image.setAttribute("alt",e.alt);
   caption.setAttribute("class",'novel-name');
   figure.appendChild(image);
-  spanName.appendChild(document.createTextNode(e.sinoptic));
+  spanName.appendChild(document.createTextNode(e.tittle));
   caption.appendChild(spanName);
   figure.appendChild(caption);
   docFragment.appendChild(figure);
@@ -86,22 +89,22 @@ function showSlide(index){
 }
 
 function createButtonShow(figure,video){
-  var button=document.createElement('button');
-  button.setAttribute("id",'button-show');
-  button.setAttribute("class",'button-show');
-  button.appendChild(document.createTextNode("Ver ahora"));
-  figure.appendChild(button);
-  console.log(video);
+    var button=document.createElement('button');
+    button.setAttribute("id",'button-show');
+    button.setAttribute("class",'button-show');
+    button.appendChild(document.createTextNode("Ver ahora"));
+    figure.appendChild(button);
+}
 
-  figure.onclick=function(e){
-    e.preventDefault();
-    console.log(video);
-    console.log(document.getElementById('video').children[0]);
-    document.getElementById('video').children[0].setAttribute("src",video);
-    console.log(document.getElementById('video').children[0]);
-    document.getElementsByClassName('reproductor')[0].style.display="block";
 
-    //console.log(document.getElementById('video').children[0]);
-
-  }
+function createReproductor(id){
+  var video=document.createElement('video');
+  var source=document.createElement('source');
+  source.id="srcvideo";
+  source.src="assets/media/video"+id+".mp4";
+  source.type="video/mp4";
+  video.setAttribute("id",'video'+id);
+  video.setAttribute("controls",'');
+  video.appendChild(source);
+  document.getElementById('reproductor').appendChild(video);
 }

@@ -15,8 +15,8 @@ font-family: 'Fauna One', serif;*/
 }
 header{
   width: 100%;
-  height: 70px;
-  background: #A8D0D9;
+  height: 90px;
+  /*background: #;*/
 }
 
 aside{
@@ -25,44 +25,78 @@ aside{
 
 .menu{
   position: relative;
+  height: 80px;
 }
 
-.menu .logo{
-  width: 120px;
-  height: 50px;
+.logo{
+  display: inline-block;
+  width: 300px;
+  height: 70px;
   position: absolute;
   top:10px;
-  left:5%;
+  left:40%;
 }
-.menu div{
-  display: inline-block;
+.img-logo{
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.name-logo{
+  height: 70px;
+  width: 170px;
+  position: absolute;
+  left: 60px;
+  top: 0;
 }
 .turk{
+  font-size: 3.8em;
+  top: 5px;
+  font-family: "Acme";
+}
+.tv{
   font-size: 3em;
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  font-family: "Acme";
 }
 
 .logo img{
   width: 50px;
-  height: 50px;
+  height: 50px
 }
+
 .menu ul{
   position: absolute;
-  left: 14%;
+  left: 5%;
+  top: 15px;
 }
+
 .menu ul li{
   list-style: none;
   display: inline-block;
   margin: 10px;
+  top: 20px;
 }
 .menu ul li a{
   text-decoration: none;
-  color: #fff;
+  color:#3E517A;
+  font-weight: bold;
+  font-size: 21px;
 }
 .contenedor{
   width: 100%;
   height: auto;
 }
 
+.form{
+  position: absolute;
+  right:5%;
+  top: 20px;
+}
+.form a{
+  text-decoration: none;
+}
 /*social media fixed*/
 .social-media{
   width: 50px;
@@ -129,6 +163,7 @@ aside{
 .slide{
   position: relative;
   text-align: center;
+  background:#d8e9eb;
 }
 
 .figure-slide img{
@@ -136,6 +171,15 @@ aside{
   height: 500px;
 }
 
+.figure-slide span{
+  position: absolute;
+  bottom: 50px;
+  left: 17%;
+  font-size: 49px;
+  color: #ddfbff;
+  padding: 20px 30px;
+  background: rgba(54, 54, 54, 0.47);
+}
 
 .videos{
 
