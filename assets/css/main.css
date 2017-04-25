@@ -1,9 +1,11 @@
 @import url('../icomoon/style.css');
+/*font-family: 'Jaldi', sans-serif;
+font-family: 'Fauna One', serif;*/
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: 'Fauna One', serif;
 }
 .left{
   float: left;
@@ -16,6 +18,11 @@ header{
   height: 70px;
   background: #73f587;
 }
+
+aside{
+  margin: 5% 25%;
+}
+
 .menu{
   position: relative;
 }
@@ -42,14 +49,12 @@ header{
   margin: 10px;
 }
 .menu ul li a{
-
   text-decoration: none;
   color: #fff;
 }
 .contenedor{
   width: 100%;
-  height: 500px;
-  border: 1px solid #000;
+  height: auto;
 }
 
 /*social media fixed*/
@@ -59,6 +64,7 @@ header{
   position: fixed;
   left: 5px;
   top:35%;
+  z-index: 1;
 }
 
 .social-media a{
@@ -69,23 +75,105 @@ header{
 .social-media a:hover{
   transform: scale(1.1);
 }
+/*Reproductor*/
 
-.principal{
-  height: 70px;
+.reproductor{
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 240, 181,0.6);
+  position:fixed;
+  top:0;
+  left: 0;
 }
 
-.image-novel{
-  margin: 10px;
+.reproductor-content{
+  padding: 70px;
   display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+}
+
+.reproductor-content video{
+  width: 500px;
+  height: 300px;
+  border: 10px solid #fff;
+}
+
+#close-reproductor{
+  position: absolute;
+  top:10px;
+  right: 2%;
+  color:#fff;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 7px 14px;
+  background: #405854;
+  border-radius: 50%;
+}
+
+#close-reproductor:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /*slides*/
 .slide{
   position: relative;
+  text-align: center;
 }
+
 .figure-slide img{
   width: 900px;
   height: 500px;
+}
+
+
+.videos{
+
+}
+/*Grid*/
+.grid h3{
+  text-align: center;
+  margin-top: 70px;
+}
+
+.image-novel{
+  margin: 10px 30px;
+  display: inline-block;
+  position: relative;
+}
+
+/*.image-novel img:hover{
+  transition: .5s;
+  -webkit-transform: scale(1.03,1.03);
+  -ms-transform: scale(1.03,1.03);
+  transform: scale(1.03,1.03);
+}*/
+
+
+.button-show{
+  border: none;
+  border-radius: 10px;
+  background: rgba(90, 210, 189, 0.51);
+  width: 124px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+#button-show:hover{
+  /*background: #6dd69e;*/
+  /*color: */
+}
+.show{
+  transform: scale(1.1);
+  display: block;
 }
 
 footer{

@@ -23,7 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 27px;
+  background: #fff;
 }
+
 
 .icon-bubble2:before {
   content: "\e96e";

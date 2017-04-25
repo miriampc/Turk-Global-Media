@@ -19,6 +19,17 @@ window.addEventListener('load',function(){
     figure.appendChild(caption);
     docFragment.appendChild(figure);
     grid.appendChild(docFragment);
+
+    figure.onclick=function(event){
+      event.preventDefault();
+      console.log(e.video+id+".mp4");
+      document.getElementsByClassName('reproductor')[0].classList.add("show");
+      document.getElementById('video').setAttribute("src","assets/media/video"+id+".mp4");
+      document.getElementById('close-reproductor').addEventListener("click",function(){
+        document.getElementsByClassName('reproductor')[0].classList.remove("show");
+      });
+    }
+
   });
 
   slides.slideImg.forEach(function(e,id){
@@ -71,4 +82,26 @@ function showSlide(index){
       slide[i].style.display = "none";
    }
    slide[slideIndex-1].style.display = "block";
+   //setTimeout(showSlide, 2000);
+}
+
+function createButtonShow(figure,video){
+  var button=document.createElement('button');
+  button.setAttribute("id",'button-show');
+  button.setAttribute("class",'button-show');
+  button.appendChild(document.createTextNode("Ver ahora"));
+  figure.appendChild(button);
+  console.log(video);
+
+  figure.onclick=function(e){
+    e.preventDefault();
+    console.log(video);
+    console.log(document.getElementById('video').children[0]);
+    document.getElementById('video').children[0].setAttribute("src",video);
+    console.log(document.getElementById('video').children[0]);
+    document.getElementsByClassName('reproductor')[0].style.display="block";
+
+    //console.log(document.getElementById('video').children[0]);
+
+  }
 }

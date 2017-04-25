@@ -1,12 +1,13 @@
 var directory="assets/images/novels/novel-";
-var allNovels=[{src:directory, alt:"Sila",sinoptic:""},
-               {src:directory, alt:"Fatmagul",sinoptic:""},
-               {src:directory, alt:"El Sultan",sinoptic:""},
-               {src:directory, alt:"Amor Prohibido",sinoptic:""},
-               {src:directory, alt:"Ezel",sinoptic:""},
-               {src:directory, alt:"Las mil y una noches",sinoptic:""},
-               {src:directory, alt:"El secreto de Feriha",sinoptic:""},
-               {src:directory, alt:"Tormenta de Pasiones",sinoptic:""}];
+var videoDirectory="assets/media/video";
+var allNovels=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"Fatmagul",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"El Sultan",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"Amor Prohibido",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"Ezel",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"Las mil y una noches",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"El secreto de Feriha",sinoptic:"",video:videoDirectory},
+               {src:directory, alt:"Tormenta de Pasiones",sinoptic:"",video:videoDirectory}];
 
 
 var slideImg=[{src:directory, alt:"feriha",sinoptic:"",file:".jpg"},

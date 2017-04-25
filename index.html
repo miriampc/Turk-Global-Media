@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Proyecto x</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Fauna+One|Jaldi" rel="stylesheet">
 </head>
 <body>
   <form action="">
@@ -32,11 +33,19 @@
       <button id="previus" class="icon-circle-left left"></button>
       <button id="next" class="icon-circle-right right"></button>
     </section>
-    <section class="contenedor principal">
-      <aside>Nombre de la emp</aside>
+
+    <section class="contenedor grid">
+      <h3>Novelas mas rankeadas</h3>
+      <aside id="grid"></aside>
     </section>
 
-    <section id="grid" class="contenedor grid">
+    <section class="contenedor reproductor">
+      <aside class="reproductor-content">
+        <video class="videos" controls>
+          <source id="video" type="video/mp4">
+        </video>
+        <span id="close-reproductor">X</span>
+      </aside>
     </section>
 
     <footer>footer</footer>
