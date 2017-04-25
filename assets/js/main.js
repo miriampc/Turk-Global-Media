@@ -1,16 +1,18 @@
+var docFragment=document.createDocumentFragment();
+
 window.addEventListener('load',function(){
-  var docFragment=document.createDocumentFragment();
   var grid=document.getElementById('grid');
   var slide=document.getElementById('slide');
 
-  figures.allNovels.forEach(function(e,id){
+//creando elemntos del grid
+  figures.gridImg.forEach(function(e,i){
     var figure=document.createElement('figure');
     var image=document.createElement('img');
     var caption=document.createElement('figcaption');
     var spanName=document.createElement('span');
     figure.setAttribute("class","image-novel");
-    image.setAttribute("id","novel"+id);
-    image.src=e.src+id+".jpeg";
+    image.setAttribute("id","novel"+i);
+    image.src=e.src+i+".jpeg";
     image.setAttribute("alt",e.alt);
     caption.setAttribute("class",'novel-name');
     figure.appendChild(image);
@@ -20,18 +22,18 @@ window.addEventListener('load',function(){
     docFragment.appendChild(figure);
     grid.appendChild(docFragment);
 
-    figure.onclick=function(event){
-      createReproductor(id);
+    figure.addEventListener('click',function(event){
+      createReproductor(i);
       event.preventDefault();
-      console.log(e.video+id+".mp4");
       document.getElementsByClassName('reproductor')[0].classList.add("show");
-      document.getElementById('srcvideo').setAttribute("src",e.video+id+".mp4");
+      document.getElementById('srcvideo').setAttribute("src",e.video+i+".mp4");
+
+      //evento cerrar modal
       document.getElementById('close-reproductor').addEventListener("click",function(){
         document.getElementsByClassName('reproductor')[0].classList.remove("show");
-        console.log(document.getElementById('video'+id));
-        document.getElementById('reproductor').removeChild(document.getElementById('video'+id));
+        document.getElementById('reproductor').removeChild(document.getElementById('video'+i));
       });
-    }
+    });
 
   });
 
@@ -48,9 +50,18 @@ window.addEventListener('load',function(){
       plusSlide(1);
   });
 
+  //eventos
+  document.getElementsByName('search')[0].addEventListener('mouseover',function(){
+    document.getElementsByName('search')[0].style.width="200px";
+    document.getElementsByName('search')[0].focus();
+  });
+
+  document.getElementsByName('search')[0].addEventListener('blur',function(){
+    document.getElementsByName('search')[0].style.width="100px";
+  });
 
 });
-var docFragment=document.createDocumentFragment();
+
 var slide=document.getElementById('slide');
 
 function createSlide(e,id){
@@ -59,7 +70,6 @@ function createSlide(e,id){
   var caption=document.createElement('figcaption');
   var spanName=document.createElement('span');
   figure.setAttribute("class","figure-slide");
-  //image.setAttribute("id","novel"+id);
   image.src=e.src+e.alt+id+e.file;
   image.setAttribute("alt",e.alt);
   caption.setAttribute("class",'novel-name');

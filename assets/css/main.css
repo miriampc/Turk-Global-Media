@@ -1,100 +1,126 @@
 @import url('../icomoon/style.css');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: 'Fauna One', serif;
 }
-
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 header{
   width: 100%;
   height: 80px;
-  }
+  background: rgba(235, 245, 245, 0.86);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
 
-  .menu{
-    position: relative;
-  }
+aside{
+  margin: 5% 25%;
+}
+
+.contenedor{
+  width: 100%;
+  height: auto;
+}
+
+.menu{
+  height: 80px;
+  margin: 0 7%;
+  position: relative;
+}
 
 .logo{
-  display: inline-block;
+  position: absolute;
+  left: 45%;
   width: 300px;
   height: 70px;
-  position: absolute;
-  top:10px;
-  left:40%;
 }
-.img-logo{
-  //display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 10px;
+
+.img-logo img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 5px;
 }
 .name-logo{
   height: 70px;
   width: 170px;
-  position: absolute;
-  left: 60px;
-  top: 0;
 }
 .turk{
   font-size: 3.8em;
-  top: 5px;
   font-family: "Acme";
+  color: #40cbe9 ;
+  position: absolute;
+  top: 5px;
+  left: 80px;
 }
 .tv{
   font-size: 3em;
   position: absolute;
-  left: 125px;
+  left: 200px;
   top: 10px;
   font-family: "Acme";
+  color: #1d2a46 ;
 }
 
-.logo img{
-
-  width: 50px;
-  height: 50px
-
-}
 .menu ul{
   position: absolute;
-  left: 5%;
-  top: 15px;
+  top: 14px;
 }
+
 .menu ul li{
   list-style: none;
   display: inline-block;
   margin: 10px;
-  top: 20px;
 }
 .menu ul li a{
-
   text-decoration: none;
-  color:
+  color: #3E517A ;;
+  font-weight: bold;
+  font-size: 21px;
+}
+.menu ul li a:hover{
+  padding: 10px;
+  border-bottom: 2px solid #d1f4f6 ;
+  transform: scale(1.1);
 }
 
-
-.contenedor{
-  width: 100%;
-  height: 500px;
-  border: 1px solid #000;
+.menu-right input{
+  border: 1px solid #1d2a46 ;
+  padding: 7px;
+  background: none;
+  /*color:  #1d2a46 ;*/
+  width: 100px;
 }
+/*.form input:hover{
+  width: 200px;
+}*/
 
-.form{
+.menu-right{
   position: absolute;
   right:5%;
   top: 20px;
 }
-.form a{
+.menu-right a{
   text-decoration: none;
 }
 /*social media fixed*/
 .social-media{
-  width: 80px;
+  width: 50px;
   height: auto;
   position: fixed;
   left: 5px;
   top:35%;
-
+  z-index: 1;
+}
 
 .social-media a{
   margin: 10px 0;
@@ -104,15 +130,119 @@ header{
 .social-media a:hover{
   transform: scale(1.1);
 }
+/*Reproductor*/
 
-.principal{
-  height: 70px;
+.reproductor{
+  display: none;
+  /*z-index: 3;*/
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 240, 181,0.6);
+  position:fixed;
+  top:0;
+  left: 0;
+}
+
+.reproductor-content{
+  padding: 70px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+}
+
+.reproductor-content video{
+  width: 500px;
+  height: 300px;
+  border: 10px solid #fff;
+}
+
+#close-reproductor{
+  position: absolute;
+  top:10px;
+  right: 2%;
+  color:#fff;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 7px 14px;
+  background: #405854 ;
+  border-radius: 50%;
+}
+
+#close-reproductor:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*slides*/
+.slide{
+  margin-top: 80px;
+  position: relative;
+  text-align: center;
+  background:#d8e9eb ;
+}
+
+.figure-slide img{
+  width: 900px;
+  height: 450px;
+  margin: 30px 0;
+}
+
+.figure-slide span{
+  position: absolute;
+  bottom: 50px;
+  left: 17%;
+  font-size: 49px;
+  color: #ddfbff ;
+  padding: 20px 30px;
+  background: rgba(54, 54, 54, 0.47);
+}
+
+.videos{
+
+}
+/*Grid*/
+.grid h3{
+  text-align: center;
+  margin-top: 70px;
 }
 
 .image-novel{
-  margin: 10px;
+  margin: 10px 30px;
   display: inline-block;
+  position: relative;
 }
+
+/*.image-novel img:hover{
+  transition: .5s;
+  -webkit-transform: scale(1.03,1.03);
+  -ms-transform: scale(1.03,1.03);
+  transform: scale(1.03,1.03);
+}*/
+
+
+.button-show{
+  border: none;
+  border-radius: 10px;
+  background: rgba(90, 210, 189, 0.51);
+  width: 124px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+#button-show:hover{
+  /*background: #6dd69e ;*/
+  /*color: */
+}
+.show{
+  transform: scale(1.1);
+  display: block;
+}
+
 footer{
   width: 100%;
   height: 100px;

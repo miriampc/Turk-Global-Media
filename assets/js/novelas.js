@@ -1,13 +1,13 @@
 var directory="assets/images/novels/novel-";
 var videoDirectory="assets/media/video";
-var allNovels=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"Fatmagul",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"El Sultan",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"Amor Prohibido",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"Ezel",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"Las mil y una noches",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"El secreto de Feriha",sinoptic:"",video:videoDirectory},
-               {src:directory, alt:"Tormenta de Pasiones",sinoptic:"",video:videoDirectory}];
+var gridImg=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Fatmagul",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"El Sultan",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Amor Prohibido",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Ezel",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Las mil y una noches",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"El secreto de Feriha",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Tormenta de Pasiones",sinoptic:"",video:videoDirectory}];
 
 
 var slideImg=[{src:directory, alt:"Feriha",tittle:"Feriha",file:".jpg"},
@@ -20,7 +20,7 @@ var slideImg=[{src:directory, alt:"Feriha",tittle:"Feriha",file:".jpg"},
               {src:directory, alt:"Kosem",tittle:"Kosem",file:".png"}];
 
 function GridSection(figure){
-   this.allNovels=figure;
+   this.gridImg=figure;
    this.addImages=function(){
      this.figures.push({
        directory:directory,
@@ -42,5 +42,5 @@ function SlideSection(figure){
    };
 }
 
-var figures=new GridSection(allNovels);
+var figures=new GridSection(gridImg);
 var slides=new SlideSection(slideImg);
