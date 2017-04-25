@@ -4,49 +4,72 @@
   margin: 0;
   box-sizing: border-box;
   font-family: cursive;
-
 }
 
 header{
   width: 100%;
-  height: 70px;
-  background: #A8D0D9;
-}
-.menu{
-  position: relative;
-}
+  height: 80px;
+  }
 
-.menu .logo{
-  width: 120px;
-  height: 50px;
+  .menu{
+    position: relative;
+  }
+
+.logo{
+  display: inline-block;
+  width: 300px;
+  height: 70px;
   position: absolute;
   top:10px;
-  left:5%;
+  left:40%;
 }
-.menu div{
-  display: inline-block;
+.img-logo{
+  //display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.name-logo{
+  height: 70px;
+  width: 170px;
+  position: absolute;
+  left: 60px;
+  top: 0;
 }
 .turk{
+  font-size: 3.8em;
+  top: 5px;
+  font-family: "Acme";
+}
+.tv{
   font-size: 3em;
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  font-family: "Acme";
 }
 
 .logo img{
+
   width: 50px;
-  height: 50px;
+  height: 50px
+
 }
 .menu ul{
   position: absolute;
-  left: 14%;
+  left: 5%;
+  top: 15px;
 }
 .menu ul li{
   list-style: none;
   display: inline-block;
   margin: 10px;
+  top: 20px;
 }
 .menu ul li a{
 
   text-decoration: none;
-  color: #fff;
+  color:
 }
 .contenedor{
   width: 100%;
@@ -54,6 +77,14 @@ header{
   border: 1px solid #000;
 }
 
+.form{
+  position: absolute;
+  right:5%;
+  top: 20px;
+}
+.form a{
+  text-decoration: none;
+}
 /*social media fixed*/
 .social-media{
   width: 80px;
