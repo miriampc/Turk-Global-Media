@@ -33,7 +33,10 @@
 .icon-menu:before {
   content: "\e9bd";
   font-size: 28px;
-  color: #07111d;
+  color: #fff;
+  background: #211d33;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 .icon-bubble2:before {
   content: "\e96e";

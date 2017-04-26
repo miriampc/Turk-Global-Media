@@ -70,13 +70,18 @@ window.addEventListener('load',function(){
   document.getElementsByName('search')[0].addEventListener('blur',function(){
     document.getElementsByName('search')[0].style.width="100px";
   });
-  //mousemove
-  // document.getElementById('slide').onmousemove=function(){
-  //   var span=document.createElement('span');
-  //   document.getElementById('slide').appendChild(span);
-  //   span.style.color="green";
-  // }
+
   document.getElementById('hamburguer').onclick=function(){
-    
+    document.getElementsByClassName('menu')[0].classList.toggle('show');
+    document.getElementsByClassName('icon-menu')[0].classList.toggle('hamburguer-hover');
+    var li=document.getElementsByTagName('li');
+    for (var i = 0; i < li.length; i++) {
+      document.getElementsByClassName('enlace')[i].onclick=function(){
+        document.getElementsByClassName('menu')[0].classList.remove('show');
+        document.getElementsByClassName('icon-menu')[0].classList.toggle('hamburguer-hover');
+      }
+    }
   }
+
+
 });
