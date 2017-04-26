@@ -12,7 +12,7 @@ window.addEventListener('load',function(){
     var spanName=document.createElement('span');
     figure.setAttribute("class","image-novel");
     image.setAttribute("id","novel"+i);
-    image.src=e.src+i+".jpeg";
+    image.src=e.src+i+".jpg";
     image.setAttribute("alt",e.alt);
     caption.setAttribute("class",'novel-name');
     figure.appendChild(image);
@@ -28,6 +28,14 @@ window.addEventListener('load',function(){
       document.getElementsByClassName('reproductor')[0].classList.add("show");
       document.getElementById('srcvideo').setAttribute("src",e.video+i+".mp4");
 
+      //Evento onpause
+      document.getElementById('video'+i).onpause=function(){
+        creaMesageVideo();
+      }
+      //Evento onplay
+      document.getElementById('video'+i).onplay=function(){
+        document.getElementById('reproductor').removeChild(document.getElementById('mensaje-video'));
+      }
       //evento cerrar modal
       document.getElementById('close-reproductor').addEventListener("click",function(){
         document.getElementsByClassName('reproductor')[0].classList.remove("show");
@@ -51,14 +59,18 @@ window.addEventListener('load',function(){
   });
 
   //eventos
+  //----mouseover
   document.getElementsByName('search')[0].addEventListener('mouseover',function(){
     document.getElementsByName('search')[0].style.width="200px";
     document.getElementsByName('search')[0].focus();
   });
-
+  //----blur
   document.getElementsByName('search')[0].addEventListener('blur',function(){
     document.getElementsByName('search')[0].style.width="100px";
   });
+  //----keydown
+
+
 
 });
 
@@ -98,7 +110,7 @@ function showSlide(index){
    //setTimeout(showSlide, 2000);
 }
 
-function createButtonShow(figure,video){
+function createButtonShow(figure){
     var button=document.createElement('button');
     button.setAttribute("id",'button-show');
     button.setAttribute("class",'button-show');
@@ -115,6 +127,15 @@ function createReproductor(id){
   source.type="video/mp4";
   video.setAttribute("id",'video'+id);
   video.setAttribute("controls",'');
+  video.setAttribute("autoplay",'');
   video.appendChild(source);
   document.getElementById('reproductor').appendChild(video);
+}
+
+function creaMesageVideo(){
+  var message=document.createElement('p');
+  message.appendChild(document.createTextNode("Sigue disfrutando de tu novela turca favorita! Ponle PLAY"));
+  message.setAttribute("id",'mensaje-video');
+  document.getElementById("reproductor").appendChild(message);
+
 }

@@ -22,8 +22,13 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 27px;
+  font-size: 35px;
+  display: inline-block;
   /*background: #fff;*/
+}
+
+[class^="icon-"], [class*=" icon-"]{
+  color: rgba(110, 113, 119, 0.77);
 }
 
 .icon-bubble2:before {
@@ -34,38 +39,51 @@
 }
 .icon-search:before {
   content: "\e986";
-  color:  #1d2a46;
   font-size: 16px;
 }
+.icon-search:hover{
+  color:  #1d2a46;
+  transform: scale(1.1);
+}
+
 .icon-circle-right:before {
   content: "\ea42";
   font-size: 42px;
-  color: #494d60;
   position: absolute;
   top:45%;
   right: 50px;
 }
+.icon-circle-left:hover,.icon-circle-right:hover{
+  color: #70d5e3;
+}
 .icon-circle-left:before {
   content: "\ea44";
   font-size: 42px;
-  color: #494d60;
   position: absolute;
   top:45%;
   left: 50px;
 }
 .icon-google-plus2:before {
   content: "\ea8c";
+}
+.icon-google-plus2:hover{
   color: #e65a5a;
 }
 .icon-facebook2:before {
   content: "\ea91";
+}
+.icon-facebook2:hover{
   color: #36349c;
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-twitter:hover{
   color: #3ccfd9;
 }
 .icon-youtube:before {
   content: "\ea9d";
-color: #d92b40;
+}
+.icon-youtube:hover{
+  color: #d92b40;
 }
