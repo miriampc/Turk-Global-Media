@@ -1,10 +1,14 @@
 .input-box {
   position: relative;
+
+  padding: 20px 0;
+
 }
 .input-box span{
   display: block;
   background-color: rgba(51,51,51,0.8);
   padding: 5px;
+  padding: 10px;
   position: absolute;
   left: 105%;
   top: 8px;

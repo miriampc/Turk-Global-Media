@@ -60,23 +60,31 @@ window.addEventListener('load',function(){
       plusSlide(1);
   });
 
-  //eventos
-  //----mouseover
+  //evento mouseover
   document.getElementsByName('search')[0].addEventListener('mouseover',function(){
     document.getElementsByName('search')[0].style.width="200px";
     document.getElementsByName('search')[0].focus();
   });
-  //----blur
+
+  //evento blur
   document.getElementsByName('search')[0].addEventListener('blur',function(){
     document.getElementsByName('search')[0].style.width="100px";
   });
-  //mousemove
-  // document.getElementById('slide').onmousemove=function(){
-  //   var span=document.createElement('span');
-  //   document.getElementById('slide').appendChild(span);
-  //   span.style.color="green";
-  // }
+
   document.getElementById('hamburguer').onclick=function(){
-    
+    document.getElementsByClassName('menu')[0].classList.toggle('show');
+    document.getElementsByClassName('icon-menu')[0].classList.toggle('hamburguer-hover');
+    var li=document.getElementsByTagName('li');
+    for (var i = 0; i < li.length; i++) {
+      document.getElementsByClassName('enlace')[i].onclick=function(){
+        document.getElementsByClassName('menu')[0].classList.remove('show');
+        document.getElementsByClassName('icon-menu')[0].classList.toggle('hamburguer-hover');
+      }
+    }
   }
+removeTooltip();
+  document.getElementById("form").onsubmit = function(e){
+       e.preventDefault();
+       ValidateForm();
+   }
 });
