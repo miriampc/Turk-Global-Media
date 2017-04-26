@@ -17,7 +17,7 @@
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Series</a></li>
           <li><a href="#">Noticias</a></li>
-          <li><a href="#">Suscríbete</a></li>
+          <li><a href="#" id="suscribete">Suscríbete</a></li>
         </ul>
         <div class="logo">
           <div class="img-logo">
@@ -58,13 +58,45 @@
       </aside>
     </section>
 
-    <section class="contenedor suscripcion">
+    <section class="contenedor-suscripcion" id="suscripción">
+      <form class="formulario" action="index.html" method="post">
+        <div class="head">
+          <h1>Regístrate</h1>
+        </div>
+        <div class="text">
+          <p>Registráte con tu correo electrónico</p>
+        </div>
+        <div class="text">
+          <label for="name" class="hidden">Nombre Completo</label>
+          <input type="text" name="" value="" placeholder="Nombre completo"><br>
+      </div>
+      <div class="text">
+          <label for="email" class="hidden">Correo electrónico</label>
+          <input type="text" name="" value="" placeholder="Correo electrónico"><br>
+      </div>
+      <div class="text">
+        <label for="password" class="hidden">Contraseña</label>
+        <input type="text" name="" value="" placeholder="contraseña"><br>
+      </div>
+      <div class="text">
+        <input type="checkbox" name="" value=""><br>
+        <label for="">Informarme de promociones de Turk TV</label>
+      </div>
+      <div class="text">
+        <button type="button" name="button" id="send">Enviar Datos</button>
+      </div>
+    </form>
 
     </section>
 
     <footer>footer</footer>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/novelas.js"></script>
+    <script type="text/javascript" src ="assets/js/form.js">
+
+    </script>
+
+    </script>
   </form>
 </body>
 </html>

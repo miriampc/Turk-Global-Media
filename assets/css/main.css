@@ -242,7 +242,24 @@ aside{
   transform: scale(1.1);
   display: block;
 }
+.contenedor-suscripcion {
+    margin: 0 auto;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    font-family: "Acme";
+}
+.text{
+  padding: .5em;
+}
 
+
+label {
+    display: inline-block;
+    text-align: left;
+
+}
 footer{
   width: 100%;
   height: 100px;
