@@ -25,7 +25,7 @@ header{
 }
 
 aside{
-  margin: 5% 20%;
+  margin: 5% 20% 0 20%;
 }
 
 .contenedor{
@@ -158,6 +158,7 @@ aside{
   width: 500px;
   height: 300px;
   border: 10px solid #fff;
+  opacity: 1;
 }
 
 #close-reproductor{
@@ -185,6 +186,7 @@ aside{
   color: #51e7a3;
   position: absolute;
   top: 35%;
+  z-index: 3;
 }
 
 /*slides*/
@@ -232,30 +234,22 @@ aside{
   height: 245px;
 }
 
-/*.image-novel img:hover{
+.image-novel:hover{
   transition: .5s;
   -webkit-transform: scale(1.03,1.03);
   -ms-transform: scale(1.03,1.03);
   transform: scale(1.03,1.03);
-}*/
+  opacity: 0.5;
+}
 
-
-.button-show{
-  border: none;
-  border-radius: 10px;
+.ver-video{
   background: rgba(90, 210, 189, 0.51);
-  width: 124px;
-  height: 150px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
-  z-index: 1;
-}
-
-#button-show:hover{
-  /*background: #6dd69e ;*/
-  /*color: */
 }
 
 .show{
@@ -264,7 +258,10 @@ aside{
 }
 
 footer{
+  text-align: center;
+  color: #beebe3;
   width: 100%;
   height: 100px;
-  background: rgba(80, 106, 91, 0.74);
+  background: #061624;
+  padding: 20px 0;
 }
