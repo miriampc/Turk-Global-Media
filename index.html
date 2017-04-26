@@ -6,20 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Turk Global Media</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Fauna+One|Jaldi" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Fauna+One|Jaldi" rel="stylesheet">
 </head>
 <body>
-  <form action="">
+  <form class="formulario" action="index.html" method="post" id="form">
     <header>
-      <nav class="menu">
+      <span id="hamburguer" class="icon-menu"></span>
+      <nav class="menu left">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Series</a></li>
+          <li><a href="#slide">Inicio</a></li>
+          <li><a href="#novelas">Novelas</a></li>
           <li><a href="#">Noticias</a></li>
           <li><a href="#" id="suscribete">Suscríbete</a></li>
         </ul>
-        <div class="logo">
+      </nav>
+      <nav class="logo">
           <div class="img-logo">
             <img src="assets/images/logo-azul.jpg" alt="ojo turco">
           </div>
@@ -27,18 +28,17 @@
            <span class="turk">Turk</span>
            <span class="tv">tv</span>
          </div>
-       </div>
-       <div class="menu-right">
+      </nav>
+       <nav class="menu-right">
          <input type="text" name="search" value="" placeholder="Buscar">
          <span id="search" class="icon-search"></span>
          <!-- <a href="#">Iniciar Sesión</a> -->
-       </div>
       </nav>
     </header>
     <section class="social-media">
       <a href="#"class="icon-facebook2"></a>
-      <a href="#"class="icon-twitter"></a>
       <a href="#"class="icon-google-plus2"></a>
+      <a href="#"class="icon-twitter"></a>
       <a href="#"class="icon-youtube"></a>
     </section>
 
@@ -47,8 +47,8 @@
       <button id="next" class="icon-circle-right right"></button>
     </section>
 
-    <section class="contenedor grid">
-      <h3>Novelas mas rankeadas</h3>
+    <section id="novelas" class="contenedor grid">
+      <h3>-- Tus Novelas Favoritas --</h3>
       <aside id="grid"></aside>
     </section>
 
@@ -59,44 +59,44 @@
     </section>
 
     <section class="contenedor-suscripcion" id="suscripción">
-      <form class="formulario" action="index.html" method="post">
         <div class="head">
           <h1>Regístrate</h1>
         </div>
         <div class="text">
           <p>Registráte con tu correo electrónico</p>
         </div>
-        <div class="text">
+        <div class="input-box">
           <label for="name" class="hidden">Nombre Completo</label>
-          <input type="text" name="" value="" placeholder="Nombre completo"><br>
+          <input type="text" id="name" placeholder="Nombre completo">
+          <span class="" id="name-alert"></span>
       </div>
-      <div class="text">
+      <div class="input-box">
           <label for="email" class="hidden">Correo electrónico</label>
-          <input type="text" name="" value="" placeholder="Correo electrónico"><br>
+          <input type="text" id="email" placeholder="Correo electrónico">
+          <span class="" id="email-alert"></span>
       </div>
-      <div class="text">
+      <div class="input-box">
         <label for="password" class="hidden">Contraseña</label>
-        <input type="text" name="" value="" placeholder="contraseña"><br>
+        <input type="text" id="password" value="" placeholder="contraseña">
+        <span class="" id="password-alert"></span>
       </div>
-      <div class="text">
+      <div class="input-box">
         <input type="checkbox" name="" value=""><br>
         <label for="">Informarme de promociones de Turk TV</label>
       </div>
-      <div class="text">
-        <button type="button" name="button" id="send">Enviar Datos</button>
-      </div>
-    </form>
+        <!-- <button type="button" name="button" id="send">Enviar Datos</button> -->
+        <input type="submit" value="Enviar Datos">
 
     </section>
 
-    <footer>footer</footer>
+    <footer>
+      <span>Turk Global Media &copy; All right reserveds.</span>
+      <p>Realizado por: Miriam y Magaly</p>
+    </footer>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/novelas.js"></script>
-    <script type="text/javascript" src ="assets/js/form.js">
-
-    </script>
-
-    </script>
+    <script type="text/javascript" src ="assets/js/form.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
   </form>
 </body>
 </html>

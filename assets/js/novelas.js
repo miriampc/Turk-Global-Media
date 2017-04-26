@@ -1,17 +1,17 @@
-var directory="assets/images/novels/novel-";
+var directory="assets/images/novelas/novel-";
 var videoDirectory="assets/media/video";
 var gridImg=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
              {src:directory, alt:"Fatmagul",sinoptic:"",video:videoDirectory},
-             {src:directory, alt:"El Sultan",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Medcezir",sinoptic:"",video:videoDirectory},
              {src:directory, alt:"Amor Prohibido",sinoptic:"",video:videoDirectory},
-             {src:directory, alt:"Ezel",sinoptic:"",video:videoDirectory},
+             {src:directory, alt:"Kozem",sinoptic:"",video:videoDirectory},
              {src:directory, alt:"Las mil y una noches",sinoptic:"",video:videoDirectory},
              {src:directory, alt:"El secreto de Feriha",sinoptic:"",video:videoDirectory},
-             {src:directory, alt:"Tormenta de Pasiones",sinoptic:"",video:videoDirectory}];
+             {src:directory, alt:"Anne",sinoptic:"",video:videoDirectory}];
 
 
-var slideImg=[{src:directory, alt:"Feriha",tittle:"Feriha",file:".jpg"},
-              {src:directory, alt:"Fatmagul",tittle:"Que culpa tiene Fatmagul",file:".jpg"},
+var slideImg=[{src:directory, alt:"Fatmagul",tittle:"Que culpa tiene Fatmagul",file:".jpg"},
+              {src:directory, alt:"Feriha",tittle:"El Secreto de Feriha",file:".jpg"},
               {src:directory, alt:"Milyunanoche",tittle:"Las Mil y Una Noche",file:".jpg"},
               {src:directory, alt:"Amorprohibido",tittle:"Amor Prohibido",file:".jpg"},
               {src:directory, alt:"Sila",tittle:"Sila",file:".jpg"},

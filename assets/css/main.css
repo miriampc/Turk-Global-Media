@@ -1,17 +1,20 @@
 @import url('../icomoon/style.css');
+@import url('../css/tooltip.css');
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Fauna One', serif;
+  font-family: 'Jaldi', serif;
 }
 .left{
   float: left;
 }
+
 .right{
   float: right;
 }
+
 header{
   width: 100%;
   height: 80px;
@@ -23,12 +26,13 @@ header{
 }
 
 aside{
-  margin: 5% 25%;
+  margin: 5% 20% 0 20%;
 }
 
 .contenedor{
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
 .menu{
@@ -36,10 +40,15 @@ aside{
   margin: 0 7%;
   position: relative;
 }
+#hamburguer{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
 
 .logo{
   position: absolute;
-  left: 45%;
+  left: 40%;
   width: 300px;
   height: 70px;
 }
@@ -50,10 +59,12 @@ aside{
   border-radius: 50%;
   margin-top: 5px;
 }
+
 .name-logo{
   height: 70px;
   width: 170px;
 }
+
 .turk{
   font-size: 3.8em;
   font-family: "Acme";
@@ -62,6 +73,7 @@ aside{
   top: 5px;
   left: 80px;
 }
+
 .tv{
   font-size: 3em;
   position: absolute;
@@ -71,7 +83,7 @@ aside{
   color: #1d2a46 ;
 }
 
-.menu ul{
+.menu{
   position: absolute;
   top: 14px;
 }
@@ -90,28 +102,26 @@ aside{
 .menu ul li a:hover{
   padding: 10px;
   border-bottom: 2px solid #d1f4f6 ;
-  transform: scale(1.1);
 }
-
-.menu-right input{
-  border: 1px solid #1d2a46 ;
-  padding: 7px;
-  background: none;
-  /*color:  #1d2a46 ;*/
-  width: 100px;
-}
-/*.form input:hover{
-  width: 200px;
-}*/
 
 .menu-right{
   position: absolute;
   right:5%;
   top: 20px;
 }
+
+.menu-right input{
+  border: 1px solid #1d2a46 ;
+  padding: 7px;
+  background: none;
+  width: 100px;
+  display: inline;
+}
+
 .menu-right a{
   text-decoration: none;
 }
+
 /*social media fixed*/
 .social-media{
   width: 50px;
@@ -128,13 +138,12 @@ aside{
 }
 
 .social-media a:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
-/*Reproductor*/
 
+/*Reproductor*/
 .reproductor{
   display: none;
-  /*z-index: 3;*/
   width: 100%;
   height: 100%;
   background-color: rgba(0, 240, 181,0.6);
@@ -155,6 +164,7 @@ aside{
   width: 500px;
   height: 300px;
   border: 10px solid #fff;
+  opacity: 1;
 }
 
 #close-reproductor{
@@ -164,7 +174,7 @@ aside{
   color:#fff;
   font-weight: bold;
   font-size: 21px;
-  padding: 7px 14px;
+  padding: 2px 14px;
   background: #405854 ;
   border-radius: 50%;
 }
@@ -174,12 +184,21 @@ aside{
   cursor: pointer;
 }
 
+#mensaje-video{
+  width: 350px;
+  height: auto;
+  font-size: 27px;
+  background:rgba(11, 17, 12, 0.82);
+  color: #51e7a3;
+  position: absolute;
+  top: 35%;
+  z-index: 3;
+}
+
 /*slides*/
 .slide{
   margin-top: 80px;
   position: relative;
-  text-align: center;
-  background:#d8e9eb ;
 }
 
 .figure-slide img{
@@ -194,50 +213,51 @@ aside{
   left: 17%;
   font-size: 49px;
   color: #ddfbff ;
-  padding: 20px 30px;
+  padding: 10px 30px;
   background: rgba(54, 54, 54, 0.47);
 }
 
-.videos{
 
-}
 /*Grid*/
+.grid{
+  background:#d8e9eb;
+}
 .grid h3{
-  text-align: center;
-  margin-top: 70px;
+  color: #17154a;
+  padding-top: 70px;
+  font-size: 2em;
+  font-family: 'Fauna one';
 }
 
 .image-novel{
-  margin: 10px 30px;
+  margin: 10px 10px;
   display: inline-block;
   position: relative;
 }
 
-/*.image-novel img:hover{
+.image-novel img{
+  width: 220px;
+  height: 245px;
+}
+
+.image-novel:hover{
   transition: .5s;
   -webkit-transform: scale(1.03,1.03);
   -ms-transform: scale(1.03,1.03);
   transform: scale(1.03,1.03);
-}*/
+  opacity: 0.5;
+}
 
-
-.button-show{
-  border: none;
-  border-radius: 10px;
+.ver-video{
   background: rgba(90, 210, 189, 0.51);
-  width: 124px;
-  height: 150px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
-  z-index: 1;
 }
 
-#button-show:hover{
-  /*background: #6dd69e ;*/
-  /*color: */
-}
 .show{
   transform: scale(1.1);
   display: block;
@@ -261,7 +281,10 @@ label {
 
 }
 footer{
+  text-align: center;
+  color: #beebe3;
   width: 100%;
   height: 100px;
-  background: rgba(80, 106, 91, 0.74);
+  background: #061624;
+  padding: 20px 0;
 }
