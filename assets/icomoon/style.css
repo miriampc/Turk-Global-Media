@@ -32,6 +32,8 @@
 
 .icon-menu:before {
   content: "\e9bd";
+  font-size: 28px;
+  color: #07111d;
 }
 .icon-bubble2:before {
   content: "\e96e";

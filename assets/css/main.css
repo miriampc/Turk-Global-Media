@@ -39,6 +39,11 @@ aside{
   margin: 0 7%;
   position: relative;
 }
+#hamburguer{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
 
 .logo{
   position: absolute;

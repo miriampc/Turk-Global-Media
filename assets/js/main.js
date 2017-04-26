@@ -71,9 +71,12 @@ window.addEventListener('load',function(){
     document.getElementsByName('search')[0].style.width="100px";
   });
   //mousemove
-  document.getElementById('slide').onmousemove=function(){
-    var span=document.createElement('span');
-    document.getElementById('slide').appendChild(span);
-    span.style.color="green";
+  // document.getElementById('slide').onmousemove=function(){
+  //   var span=document.createElement('span');
+  //   document.getElementById('slide').appendChild(span);
+  //   span.style.color="green";
+  // }
+  document.getElementById('hamburguer').onclick=function(){
+    
   }
 });
