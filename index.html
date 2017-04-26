@@ -9,30 +9,31 @@
   <link href="https://fonts.googleapis.com/css?family=Acme|Fauna+One|Jaldi" rel="stylesheet">
 </head>
 <body>
-  <form action="">
+  <form action="index.html" id="form">
     <header>
       <span id="hamburguer" class="icon-menu"></span>
+      <a class="btn-subs" href="#subscripcion">Subscribete</a>
       <nav id="nav-bar" class="menu left">
         <ul>
           <li><a href="#slide" class="enlace">Inicio</a></li>
-          <li><a href="#novelas" class="enlace">Novelas</a></li>
+          <li><a href="#novelas" class="enlace">Series</a></li>
           <li><a href="#" class="enlace">Noticias</a></li>
-          <li><a href="#form" class="enlace">Suscríbete</a></li>
+          <li><a href="#subscripcion" class="enlace">Suscríbete</a></li>
         </ul>
       </nav>
       <nav class="logo">
-          <div class="img-logo">
-            <img src="assets/images/logo-azul.jpg" alt="ojo turco">
-          </div>
-          <div class="name-logo">
-           <span class="turk">Turk</span>
-           <span class="tv">tv</span>
-         </div>
+        <div class="img-logo">
+          <img src="assets/images/logo-azul.jpg" alt="ojo turco">
+        </div>
+        <div class="name-logo">
+          <span class="turk">Turk</span>
+          <span class="tv">tv</span>
+        </div>
       </nav>
-       <nav class="menu-right">
-         <input type="text" name="search" value="" placeholder="Buscar">
-         <span id="search" class="icon-search"></span>
-         <!-- <a href="#">Iniciar Sesión</a> -->
+      <nav class="menu-right">
+        <input type="text" name="search" value="" placeholder="Buscar">
+        <span id="search" class="icon-search"></span>
+        <!-- <a href="#">Iniciar Sesión</a> -->
       </nav>
     </header>
     <section class="social-media">
@@ -48,7 +49,7 @@
     </section>
 
     <section id="novelas" class="contenedor grid">
-      <h3>-- Tus Novelas Favoritas --</h3>
+      <h3>-- Tus Series Favoritas --</h3>
       <aside id="grid"></aside>
     </section>
 
@@ -58,8 +59,28 @@
       </aside>
     </section>
 
-    <section class="contenedor suscripcion">
-
+    <section id="subscripcion" class="contenedor subscripcion">
+      <article class="registro">
+        <h3>Registrate!!</h3>
+        <div class="input-box">
+          <label for="name" class="hidden">Nombre Completo</label>
+          <input type="text" id="name" placeholder="Nombre completo" required=""><br>
+          <span id="name-alert"></span>
+        </div>
+        <div class="input-box">
+          <label for="email" class="hidden">Correo electrónico</label>
+          <input type="email" id="email" placeholder="Correo electrónico" required=""><br>
+          <span id="email-alert"></span>
+        </div>
+        <div class="input-box">
+          <label for="password" class="hidden">Contraseña</label>
+          <input type="password" id="password" placeholder="contraseña" required=""><br>
+          <span id="password-alert"></span>
+        </div>
+          <input type="checkbox" id="check">
+          <label for="">Informarme de promociones de Turk TV</label><br>
+          <input id="submit" type="submit" value="Enviar Datos">
+      </article>
     </section>
 
     <footer>

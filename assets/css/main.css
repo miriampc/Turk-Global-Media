@@ -1,5 +1,5 @@
 @import url('../icomoon/style.css');
-
+@import url('../css/tooltip.css');
 *{
   padding: 0;
   margin: 0;
@@ -33,6 +33,10 @@ aside{
   height: auto;
   text-align: center;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+}
 
 #hamburguer{
   position: absolute;
@@ -42,6 +46,21 @@ aside{
 
 .hamburguer-hover{
   transform: rotate(50deg);
+}
+
+.btn-subs{
+  text-align: center;
+  font-size: 18px;
+  width: 120px;
+  background: #245e77;
+  padding: 5px;
+  position: absolute;
+  top:20px;
+  left: 130px;
+}
+.btn-subs:hover, #submit:hover{
+  transform: scale(1.1);
+  background: rgba(18, 35, 54, 0.8);
 }
 .logo{
   position: absolute;
@@ -84,10 +103,6 @@ aside{
   height: 100%;
   background: rgba(31, 40, 52, 0.94);
   display: none;
-  /*-webkit-transition: width 2s ease-in-out;
-  -moz-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;*/
-  transition: width 6s ease-in-out;
 }
 
 
@@ -263,6 +278,39 @@ aside{
 .show{
   transform: scale(1.1);
   display: block;
+}
+
+.subscripcion{
+  margin: 30px auto;
+}
+.registro{
+  margin: 5% 30%;
+  padding: 30px 80px;
+  border: 1px solid #b1b4b9;
+  border-radius: 1em;
+  font-family: "Acme";
+}
+.registro h3{
+  font-size: 27px;
+  padding: 10px 0;
+  color: #17154a;
+  font-family: 'Fauna one';
+}
+.input-box label{
+  display: inline-block;
+  float: left;
+}
+.input-box input{
+  float: right;
+  height: 40px;
+  width: 50%
+}
+
+#submit{
+  background: #245e77;
+  padding: 5px;
+  color: #fff;
+  border: none;
 }
 
 footer{

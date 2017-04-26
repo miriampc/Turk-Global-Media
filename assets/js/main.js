@@ -60,13 +60,13 @@ window.addEventListener('load',function(){
       plusSlide(1);
   });
 
-  //eventos
-  //----mouseover
+  //evento mouseover
   document.getElementsByName('search')[0].addEventListener('mouseover',function(){
     document.getElementsByName('search')[0].style.width="200px";
     document.getElementsByName('search')[0].focus();
   });
-  //----blur
+
+  //evento blur
   document.getElementsByName('search')[0].addEventListener('blur',function(){
     document.getElementsByName('search')[0].style.width="100px";
   });
@@ -82,6 +82,9 @@ window.addEventListener('load',function(){
       }
     }
   }
-
-
+removeTooltip();
+  document.getElementById("form").onsubmit = function(e){
+       e.preventDefault();
+       ValidateForm();       
+   }
 });
