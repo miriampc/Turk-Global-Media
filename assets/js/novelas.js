@@ -10,14 +10,14 @@ var gridImg=[{src:directory, alt:"Sila",sinoptic:"",video:videoDirectory},
              {src:directory, alt:"Anne",sinoptic:"",video:videoDirectory}];
 
 
-var slideImg=[{src:directory, alt:"Fatmagul",tittle:"Que culpa tiene Fatmagul",file:".jpg"},
-              {src:directory, alt:"Feriha",tittle:"El Secreto de Feriha",file:".jpg"},
-              {src:directory, alt:"Milyunanoche",tittle:"Las Mil y Una Noche",file:".jpg"},
-              {src:directory, alt:"Amorprohibido",tittle:"Amor Prohibido",file:".jpg"},
-              {src:directory, alt:"Sila",tittle:"Sila",file:".jpg"},
-              {src:directory, alt:"Anne",tittle:"Anne",file:".jpg"},
-              {src:directory, alt:"Medcezir",tittle:"Medcezir",file:".jpg"},
-              {src:directory, alt:"Kosem",tittle:"Kosem",file:".png"}];
+var slideImg=[{src:directory, alt:"fatmagul",tittle:"Que culpa tiene Fatmagul",file:".jpg"},
+              {src:directory, alt:"feriha",tittle:"El Secreto de Feriha",file:".jpg"},
+              {src:directory, alt:"milyunanoche",tittle:"Las Mil y Una Noche",file:".jpg"},
+              {src:directory, alt:"amorprohibido",tittle:"Amor Prohibido",file:".jpg"},
+              {src:directory, alt:"sila",tittle:"Sila",file:".jpg"},
+              {src:directory, alt:"anne",tittle:"Anne",file:".jpg"},
+              {src:directory, alt:"medcezir",tittle:"Medcezir",file:".jpg"},
+              {src:directory, alt:"kosem",tittle:"Kosem",file:".png"}];
 
 function GridSection(figure){
    this.gridImg=figure;
